@@ -1,0 +1,1 @@
+ssh -i "esteve.pem" admin@54.187.179.215
