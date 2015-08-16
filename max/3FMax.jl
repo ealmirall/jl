@@ -62,7 +62,7 @@ write(fOutCsv,"N.Iter, #Explorers, K, #Simu, Mean Fitness, Std Fitness\n")
 write(fOutCsvD,"N.Iter, #Explorers, K, #Simu, #Agent, Fitness\n")
 
 
-ne=6
+ne=7
 avgFit=zeros(ne,N,ntries)
 
 type agent
@@ -76,7 +76,7 @@ ag=Array(agent,nagents)
 aFitness=zeros(nagents)
 
 ne=1
-for e=[-1 0 10 25 50 100]
+for e=[-1 0 5 10 25 50 100]
 #for e=[5 10 25 50 100]
 
 	for K=0:N-1

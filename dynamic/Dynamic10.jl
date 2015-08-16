@@ -14,7 +14,7 @@ _dpivot=1	#probability to jump proportional to the distance to bench
 
 N=16
 K=0
-nBestCases=5
+nBestCases=1
 maxPivots=10
 _niter=0
 
@@ -45,7 +45,7 @@ write(fOutCsv,"N.Iter, #Explorers, K, #Simu, Mean Fitness, Std Fitness\n")
 write(fOutCsvD,"N.Iter, #Explorers, K, #Simu, #Agent, Fitness\n")
 
 
-ne=6
+ne=7
 avgFit=zeros(ne,N,ntries)
 
 type agent
@@ -59,10 +59,10 @@ ag=Array(agent,nagents)
 aFitness=zeros(nagents)
 
 ne=1
-for e=[-1 0 10 25 50 100]
+for e=[-1 0 5 10 25 50 100]
 #for e=[5 10 25 50]
 
-	for K=0:N-1
+	for K=0:N-1 
 		@printf("Explorers %2d NKtest K=%2d \n",e,K)
 		for t=1:ntries
 #			@printf("Explorers %2d NKtest K=%2d Experiment %3d\n",e,K,t)
