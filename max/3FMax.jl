@@ -21,8 +21,10 @@ _dpivot=1	#probability to jump proportional to the distance to bench
 
 N=16
 K=0
-nBestCases=10
-maxPivots=500
+#nBestCases=10  before we had 10 classes
+nBestCases=1
+maxPivots=500	#this is a mean
+_niter=0		#we count the number of iterations
 
 
 nagents=100
@@ -72,8 +74,8 @@ ag=Array(agent,nagents)
 aFitness=zeros(nagents)
 
 ne=1
-for e=[-1 0 5 10 25 50]
-#for e=[5 10 25 50]
+for e=[-1 0 10 25 50 100]
+#for e=[5 10 25 50 100]
 
 	for K=0:N-1
 		@printf("Explorers %2d NKtest K=%2d \n",e,K)
@@ -98,7 +100,7 @@ for e=[-1 0 5 10 25 50]
 
 					# Do the simulation
 					estrategy=1 	#Hill Climbing
-					ex=Simula(estrategy,ex)
+					ex,_niter=Simula(estrategy,ex)
 				end
 			else
 				ex=randperm(nagents)
@@ -124,16 +126,16 @@ for e=[-1 0 5 10 25 50]
 				ag[i].nPivot=int32(0)
 				if (strategy==4 || strategy==5) && e>0
 					#Assign a Best Case type to each agent
-					ag[i].tBCase=int32(rand()*(xe-1)+1)
+					ag[i].tBCase=int32((rand()*(xe-1))+1)
 				end
 			end
 					
 			if e>0
 				# Do the simulation
-				ag=Simula(strategy,ag,ex)
+				ag, _niter=Simula(strategy,ag,ex)
 			else
 				estrategy=e<0?0:1
-				ag=Simula(estrategy,ag)
+				ag, _niter=Simula(estrategy,ag)
 			end
 			
 			
@@ -142,15 +144,15 @@ for e=[-1 0 5 10 25 50]
 				aFit=Fitness(ag[i].stg)
 				avgFit[ne,K+1,t]=avgFit[ne,K+1,t]+aFit
 				aFitness[i]=aFit 
-				writecsv(fOutCsvD,[ne e K t i aFit])
+				writecsv(fOutCsvD,[_niter e K t i aFit])
 			end
 			avgFit[ne,K+1,t]=avgFit[ne,K+1,t]/nagents
 			
-			writecsv(fOutCsv,[ne e K t mean(aFitness) std(aFitness)])
+			writecsv(fOutCsv,[_niter e K t mean(aFitness) std(aFitness)])
 		
 			#		println(avgFit[K+1,t])
 		end
-		println(mean(avgFit[ne,K+1,:]))
+		@printf("N. of iterations %3d, Fitness %4f \n",_niter,mean(avgFit[ne,K+1,:]))
 
 	end
 	ne=ne+1

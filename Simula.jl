@@ -40,6 +40,8 @@ dosaK1=2^(K+1)
 
 nagents=size(ag,1)
 
+#counting iterations
+_niter=0
 
 if strategy==1 || strategy==0
 	# Do Hill Climbing 
@@ -59,7 +61,8 @@ if strategy==1 || strategy==0
 			end
 		end
 	end
-	return ag
+	_niter=_niter+1
+	return (ag, _niter)
 end
 
 if (strategy==2 || strategy==3 || strategy==4)
@@ -151,7 +154,8 @@ if (strategy==2 || strategy==3 || strategy==4)
 			end
 		end
 	end
-	return ag
+	_niter=_niter+1
+	return (ag, _niter)
 end
 
 if (strategy==5)
@@ -258,7 +262,8 @@ if (strategy==5)
 #	end
 
 #	return ag, bestCases[1:nBestCases]
-	return ag
+	_niter=_niter+1
+	return (ag, _niter)
 
 end
 
