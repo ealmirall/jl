@@ -134,7 +134,7 @@ if (strategy==2 || strategy==3 || strategy==4)
 							end
 						end
 						if _jump==true
-							btC=int(rand()*2)+1	#max 3 bits
+							btC=int(rand()*4)+2	#bt 2..6 bits
 							for j=1:btC
 								bC=int(rand()*(length(_freebits)-1))+1 
 								if BitGet(ag[i].stg,_freebits[bC])==0	# Flip
@@ -218,7 +218,7 @@ if (strategy==5)
 							_jump=true
 						end
 						if _jump==true
-							btC=int(rand()*2)+1	#max 3 bits
+							btC=int(rand()*4)+2	#bt 2..6 bits
 							for j=1:btC
 								bC=int(rand()*(length(_freebits)-1))+1 
 								if BitGet(ag[i].stg,_freebits[bC])==0	# Flip
