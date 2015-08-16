@@ -53,13 +53,13 @@ ftime=time()
 #fOutCsv=open("NK1stgAvg"strftime("%Y-%m-%d %H:%S", ftime)".csv","w+")
 #fOutCsvD=open("NK1stgAvgD"strftime("%Y-%m-%d %H:%S", ftime)".csv","w+")
 
-fOut=open("NK1stgMaxP"strftime("%Y-%m-%d %H:%S", ftime)".dat","w+")
-fOutCsv=open("NK1stgMaxP"strftime("%Y-%m-%d %H:%S", ftime)".csv","w+")
-fOutCsvD=open("NK1stgMaxPD"strftime("%Y-%m-%d %H:%S", ftime)".csv","w+")
+fOut=open("MaxP"strftime("%Y-%m-%d %H:%S", ftime)".dat","w+")
+fOutCsv=open("MaxP"strftime("%Y-%m-%d %H:%S", ftime)".csv","w+")
+fOutCsvD=open("MaxPD"strftime("%Y-%m-%d %H:%S", ftime)".csv","w+")
 
 
-write(fOutCsv,"Explorers Count, #Explorers, K, #Simu, Mean Fitness, Std Fitness\n")
-write(fOutCsvD,"Explorers Count, #Explorers, K, #Simu, #Agent, Fitness\n")
+write(fOutCsv,"N.Iter, #Explorers, K, #Simu, Mean Fitness, Std Fitness\n")
+write(fOutCsvD,"N.Iter, #Explorers, K, #Simu, #Agent, Fitness\n")
 
 
 ne=6
