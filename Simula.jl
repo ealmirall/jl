@@ -60,8 +60,8 @@ if strategy==1 || strategy==0
 				canvi=true
 			end
 		end
+		_niter=_niter+1
 	end
-	_niter=_niter+1
 	return (ag, _niter)
 end
 
@@ -153,8 +153,8 @@ if (strategy==2 || strategy==3 || strategy==4)
 				end
 			end
 		end
+		_niter=_niter+1
 	end
-	_niter=_niter+1
 	return (ag, _niter)
 end
 
@@ -245,7 +245,7 @@ if (strategy==5)
 			bestCases[i]=Fitness(ag[ex[i]].stg)
 		end
 		bestCases=sort(bestCases,rev=true)
-
+		_niter=_niter+1
 	end
 #	avgF=0	
 #	for i=1:nagents
@@ -262,7 +262,6 @@ if (strategy==5)
 #	end
 
 #	return ag, bestCases[1:nBestCases]
-	_niter=_niter+1
 	return (ag, _niter)
 
 end
