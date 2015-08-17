@@ -81,6 +81,7 @@ for e=[-1 0 5 10 25 50 100]
 
 	for K=0:N-1
 		@printf("Explorers %2d NKtest K=%2d \n",e,K)
+		flush(STDOUT)
 		for t=1:ntries
 
 			#Create a landscape
@@ -155,7 +156,7 @@ for e=[-1 0 5 10 25 50 100]
 			#		println(avgFit[K+1,t])
 		end
 		@printf("N. of iterations %3d, Fitness %4f \n",_niter,mean(avgFit[ne,K+1,:]))
-
+		flush(STDOUT)
 	end
 	ne=ne+1
 
