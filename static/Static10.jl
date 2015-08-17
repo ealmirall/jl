@@ -60,8 +60,8 @@ ag=Array(agent,nagents)
 aFitness=zeros(nagents)
 
 ne=1
-for e=[-1 0 5 10 25 50 100]
-#for e=[5 10 25 50]
+#for e=[-1 0 5 10 25 50 100]
+for e=[5 10 25 50 100]
 
 	for K=0:N-1
 		@printf("Explorers %2d NKtest K=%2d \n",e,K)
@@ -88,7 +88,7 @@ for e=[-1 0 5 10 25 50 100]
 
 					# Do the simulation
 					estrategy=1 	#Hill Climbing
-					ex=Simula(estrategy,ex)
+					ex, _niter=Simula(estrategy,ex)
 				end
 			else
 				ex=randperm(nagents)
@@ -120,6 +120,9 @@ for e=[-1 0 5 10 25 50 100]
 					
 			if e>0
 				# Do the simulation
+				for i=1:length(ex)
+					@printf("Element %d, \n",i)
+				end
 				ag, _niter=Simula(strategy,ag,ex)
 			else
 				estrategy=e<0?0:1

@@ -88,7 +88,7 @@ for e=[-1 0 5 10 25 50 100]
 
 					# Do the simulation
 					estrategy=1 	#Hill Climbing
-					ex=Simula(estrategy,ex)
+					ex, _niter=Simula(estrategy,ex)
 				end
 			else
 				ex=randperm(nagents)
