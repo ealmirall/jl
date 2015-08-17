@@ -60,8 +60,8 @@ ag=Array(agent,nagents)
 aFitness=zeros(nagents)
 
 ne=1
-#for e=[-1 0 5 10 25 50 100]
-for e=[5 10 25 50 100]
+for e=[-1 0 5 10 25 50 100]
+#for e=[5 10 25 50 100]
 
 	for K=0:N-1
 		@printf("Explorers %2d NKtest K=%2d \n",e,K)
