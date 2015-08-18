@@ -120,9 +120,6 @@ for e=[-1 0 5 10 25 50 100]
 					
 			if e>0
 				# Do the simulation
-				for i=1:length(ex)
-					@printf("Element %d, \n",i)
-				end
 				ag, _niter=Simula(strategy,ag,ex)
 			else
 				estrategy=e<0?0:1
