@@ -1,0 +1,225 @@
+nohup: ignoring input
+Explorers -1 NKtest K= 0 
+N. of iterations  15, Fitness 1.000000 
+Explorers -1 NKtest K= 1 
+N. of iterations  14, Fitness 0.966857 
+Explorers -1 NKtest K= 2 
+N. of iterations  14, Fitness 0.931206 
+Explorers -1 NKtest K= 3 
+N. of iterations  12, Fitness 0.902264 
+Explorers -1 NKtest K= 4 
+N. of iterations  11, Fitness 0.881491 
+Explorers -1 NKtest K= 5 
+N. of iterations   9, Fitness 0.865164 
+Explorers -1 NKtest K= 6 
+N. of iterations  12, Fitness 0.851253 
+Explorers -1 NKtest K= 7 
+N. of iterations   7, Fitness 0.837705 
+Explorers -1 NKtest K= 8 
+N. of iterations   8, Fitness 0.826867 
+Explorers -1 NKtest K= 9 
+N. of iterations   7, Fitness 0.816174 
+Explorers -1 NKtest K=10 
+N. of iterations   7, Fitness 0.804675 
+Explorers -1 NKtest K=11 
+N. of iterations   7, Fitness 0.796731 
+Explorers -1 NKtest K=12 
+N. of iterations   6, Fitness 0.785874 
+Explorers -1 NKtest K=13 
+N. of iterations   5, Fitness 0.777973 
+Explorers -1 NKtest K=14 
+N. of iterations   7, Fitness 0.769503 
+Explorers -1 NKtest K=15 
+N. of iterations   6, Fitness 0.759716 
+Explorers  0 NKtest K= 0 
+N. of iterations  10, Fitness 0.806820 
+Explorers  0 NKtest K= 1 
+N. of iterations   7, Fitness 0.811811 
+Explorers  0 NKtest K= 2 
+N. of iterations   8, Fitness 0.804884 
+Explorers  0 NKtest K= 3 
+N. of iterations   8, Fitness 0.802331 
+Explorers  0 NKtest K= 4 
+N. of iterations   7, Fitness 0.797538 
+Explorers  0 NKtest K= 5 
+N. of iterations   9, Fitness 0.789984 
+Explorers  0 NKtest K= 6 
+N. of iterations   8, Fitness 0.786471 
+Explorers  0 NKtest K= 7 
+N. of iterations   6, Fitness 0.782012 
+Explorers  0 NKtest K= 8 
+N. of iterations   8, Fitness 0.778437 
+Explorers  0 NKtest K= 9 
+N. of iterations   7, Fitness 0.772428 
+Explorers  0 NKtest K=10 
+N. of iterations   6, Fitness 0.763980 
+Explorers  0 NKtest K=11 
+N. of iterations   6, Fitness 0.756424 
+Explorers  0 NKtest K=12 
+N. of iterations   6, Fitness 0.751973 
+Explorers  0 NKtest K=13 
+N. of iterations   5, Fitness 0.745786 
+Explorers  0 NKtest K=14 
+N. of iterations   5, Fitness 0.742385 
+Explorers  0 NKtest K=15 
+N. of iterations   5, Fitness 0.733546 
+Explorers  5 NKtest K= 0 
+N. of iterations  10, Fitness 0.816903 
+Explorers  5 NKtest K= 1 
+N. of iterations   9, Fitness 0.821370 
+Explorers  5 NKtest K= 2 
+N. of iterations  79, Fitness 0.827001 
+Explorers  5 NKtest K= 3 
+N. of iterations 105, Fitness 0.844119 
+Explorers  5 NKtest K= 4 
+N. of iterations 212, Fitness 0.850796 
+Explorers  5 NKtest K= 5 
+N. of iterations  95, Fitness 0.853245 
+Explorers  5 NKtest K= 6 
+N. of iterations 199, Fitness 0.857514 
+Explorers  5 NKtest K= 7 
+N. of iterations 283, Fitness 0.861298 
+Explorers  5 NKtest K= 8 
+N. of iterations 220, Fitness 0.856931 
+Explorers  5 NKtest K= 9 
+N. of iterations 325, Fitness 0.853262 
+Explorers  5 NKtest K=10 
+N. of iterations 547, Fitness 0.847692 
+Explorers  5 NKtest K=11 
+N. of iterations 646, Fitness 0.843729 
+Explorers  5 NKtest K=12 
+N. of iterations 372, Fitness 0.837215 
+Explorers  5 NKtest K=13 
+N. of iterations 824, Fitness 0.825039 
+Explorers  5 NKtest K=14 
+N. of iterations 220, Fitness 0.816996 
+Explorers  5 NKtest K=15 
+N. of iterations 766, Fitness 0.800262 
+Explorers 10 NKtest K= 0 
+N. of iterations  10, Fitness 0.814918 
+Explorers 10 NKtest K= 1 
+N. of iterations  23, Fitness 0.814620 
+Explorers 10 NKtest K= 2 
+N. of iterations  53, Fitness 0.832013 
+Explorers 10 NKtest K= 3 
+N. of iterations 236, Fitness 0.838407 
+Explorers 10 NKtest K= 4 
+N. of iterations 128, Fitness 0.847839 
+Explorers 10 NKtest K= 5 
+N. of iterations 114, Fitness 0.850666 
+Explorers 10 NKtest K= 6 
+N. of iterations 357, Fitness 0.858565 
+Explorers 10 NKtest K= 7 
+N. of iterations 107, Fitness 0.854935 
+Explorers 10 NKtest K= 8 
+N. of iterations 211, Fitness 0.859575 
+Explorers 10 NKtest K= 9 
+N. of iterations 234, Fitness 0.853568 
+Explorers 10 NKtest K=10 
+N. of iterations 485, Fitness 0.850815 
+Explorers 10 NKtest K=11 
+N. of iterations 619, Fitness 0.840241 
+Explorers 10 NKtest K=12 
+N. of iterations 814, Fitness 0.833023 
+Explorers 10 NKtest K=13 
+N. of iterations 821, Fitness 0.817786 
+Explorers 10 NKtest K=14 
+N. of iterations 327, Fitness 0.808037 
+Explorers 10 NKtest K=15 
+N. of iterations 1048, Fitness 0.791943 
+Explorers 25 NKtest K= 0 
+N. of iterations  10, Fitness 0.816879 
+Explorers 25 NKtest K= 1 
+N. of iterations  31, Fitness 0.819275 
+Explorers 25 NKtest K= 2 
+N. of iterations  79, Fitness 0.824981 
+Explorers 25 NKtest K= 3 
+N. of iterations 198, Fitness 0.834018 
+Explorers 25 NKtest K= 4 
+N. of iterations 204, Fitness 0.844834 
+Explorers 25 NKtest K= 5 
+N. of iterations 197, Fitness 0.854480 
+Explorers 25 NKtest K= 6 
+N. of iterations 153, Fitness 0.855818 
+Explorers 25 NKtest K= 7 
+N. of iterations 211, Fitness 0.857438 
+Explorers 25 NKtest K= 8 
+N. of iterations 379, Fitness 0.856075 
+Explorers 25 NKtest K= 9 
+N. of iterations 355, Fitness 0.850267 
+Explorers 25 NKtest K=10 
+N. of iterations 278, Fitness 0.848378 
+Explorers 25 NKtest K=11 
+N. of iterations 785, Fitness 0.843337 
+Explorers 25 NKtest K=12 
+N. of iterations 335, Fitness 0.834378 
+Explorers 25 NKtest K=13 
+N. of iterations 323, Fitness 0.818437 
+Explorers 25 NKtest K=14 
+N. of iterations 987, Fitness 0.805785 
+Explorers 25 NKtest K=15 
+N. of iterations 435, Fitness 0.791839 
+Explorers 50 NKtest K= 0 
+N. of iterations  10, Fitness 0.809511 
+Explorers 50 NKtest K= 1 
+N. of iterations  52, Fitness 0.822590 
+Explorers 50 NKtest K= 2 
+N. of iterations  46, Fitness 0.824532 
+Explorers 50 NKtest K= 3 
+N. of iterations 325, Fitness 0.835813 
+Explorers 50 NKtest K= 4 
+N. of iterations 279, Fitness 0.848988 
+Explorers 50 NKtest K= 5 
+N. of iterations 459, Fitness 0.850513 
+Explorers 50 NKtest K= 6 
+N. of iterations 100, Fitness 0.856575 
+Explorers 50 NKtest K= 7 
+N. of iterations 811, Fitness 0.860419 
+Explorers 50 NKtest K= 8 
+N. of iterations 191, Fitness 0.859952 
+Explorers 50 NKtest K= 9 
+N. of iterations 211, Fitness 0.854886 
+Explorers 50 NKtest K=10 
+N. of iterations 345, Fitness 0.849580 
+Explorers 50 NKtest K=11 
+N. of iterations 982, Fitness 0.839528 
+Explorers 50 NKtest K=12 
+N. of iterations 641, Fitness 0.832964 
+Explorers 50 NKtest K=13 
+N. of iterations 501, Fitness 0.820152 
+Explorers 50 NKtest K=14 
+N. of iterations 579, Fitness 0.806464 
+Explorers 50 NKtest K=15 
+N. of iterations 731, Fitness 0.790674 
+Explorers 100 NKtest K= 0 
+N. of iterations  10, Fitness 0.811873 
+Explorers 100 NKtest K= 1 
+N. of iterations 163, Fitness 0.819504 
+Explorers 100 NKtest K= 2 
+N. of iterations 105, Fitness 0.824813 
+Explorers 100 NKtest K= 3 
+N. of iterations 140, Fitness 0.835849 
+Explorers 100 NKtest K= 4 
+N. of iterations  77, Fitness 0.841851 
+Explorers 100 NKtest K= 5 
+N. of iterations 145, Fitness 0.851608 
+Explorers 100 NKtest K= 6 
+N. of iterations 296, Fitness 0.853275 
+Explorers 100 NKtest K= 7 
+N. of iterations 132, Fitness 0.860001 
+Explorers 100 NKtest K= 8 
+N. of iterations 351, Fitness 0.860211 
+Explorers 100 NKtest K= 9 
+N. of iterations 216, Fitness 0.852681 
+Explorers 100 NKtest K=10 
+N. of iterations 250, Fitness 0.850709 
+Explorers 100 NKtest K=11 
+N. of iterations 401, Fitness 0.840331 
+Explorers 100 NKtest K=12 
+N. of iterations 619, Fitness 0.827733 
+Explorers 100 NKtest K=13 
+N. of iterations 231, Fitness 0.819461 
+Explorers 100 NKtest K=14 
+N. of iterations 509, Fitness 0.809829 
+Explorers 100 NKtest K=15 
+N. of iterations 750, Fitness 0.795009 
