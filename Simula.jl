@@ -112,7 +112,6 @@ if (strategy==2 || strategy==3 || strategy==4)
 				if newStg != ag[i].stg
 					ag[i].stg=newStg
 					canvi=true
-					ag[i].nPivot=ag[i].nPivot+1
 				else
 #					@printf("agent %2d tBCase %2d nPivot %2d mPivot %2d \n",i,ag[i].tBCase,ag[i].nPivot,ag[i].mPivot)
 					if ((strategy== 2 || strategy==3) && Fitness(newStg)<avgEx) ||

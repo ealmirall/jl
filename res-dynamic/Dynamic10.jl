@@ -24,7 +24,7 @@ strategy=5	# Strategy of the agents dynamic cases
 estrategy=1 # Strategy of the exploreres
 
 #Fix bits and assign them a value
-_nfixbits=6
+_nfixbits=5
 _fixbits=randperm(N)
 _freebits=_fixbits[1:end-_nfixbits]
 _fixbits=_fixbits[end-(_nfixbits-1):end]
