@@ -115,10 +115,10 @@ if (strategy==2 || strategy==3 || strategy==4)
 					ag[i].nPivot=ag[i].nPivot+1
 				else
 #					@printf("agent %2d tBCase %2d nPivot %2d mPivot %2d \n",i,ag[i].tBCase,ag[i].nPivot,ag[i].mPivot)
-					if ((strategy== 2 || strategy==3) && avgEx-Fitness(newStg)>eps()) ||
+					if ((strategy== 2 || strategy==3) && Fitness(newStg)<avgEx) ||
 						( strategy==4 && Fitness(newStg)<bestCases[ag[i].tBCase] ) 
 #						@printf("Old strategy %7f New strategy %7f",ag[i].stg,newStg)
-#						@printf("Aixo no hauria de passar Fitness(newStg) %7f avgEx %7f dif %7f \n",Fitness(newStg),avgEx,avgEx-Fitness(newStg))
+#						@printf("Aixo no hauria de passar Fitness(newStg) %7f avgEx %7f dif %7f  \n",Fitness(newStg),avgEx,avgEx-Fitness(newStg))
 						# Jump
 						_jump=false
 						if _dpivot==0
