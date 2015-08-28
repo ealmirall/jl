@@ -1,1 +1,1 @@
-ssh -i "esteve.pem" admin@54.69.200.153
+ssh -i "esteve.pem" admin@52.26.45.176
