@@ -107,49 +107,49 @@ if (strategy==2 || strategy==3 || strategy==4)
 			end
 		end 
 		for i=1:nagents
-			if ag[i].nPivot<ag[i].mPivot	
-				newStg=BestStrategy(strategy, ag[i], _freebits)
-				if newStg != ag[i].stg
-					ag[i].stg=newStg
-					canvi=true
-				else
+			newStg=BestStrategy(strategy, ag[i], _freebits)
+			if newStg != ag[i].stg
+				ag[i].stg=newStg
+				canvi=true
+			else
+			  if ag[i].nPivot<ag[i].mPivot	
 #					@printf("agent %2d tBCase %2d nPivot %2d mPivot %2d \n",i,ag[i].tBCase,ag[i].nPivot,ag[i].mPivot)
-					if ((strategy== 2 || strategy==3) && Fitness(newStg)<avgEx) ||
-						( strategy==4 && Fitness(newStg)<bestCases[ag[i].tBCase] ) 
+				if ((strategy== 2 || strategy==3) && Fitness(newStg)<avgEx) ||
+					( strategy==4 && Fitness(newStg)<bestCases[ag[i].tBCase] ) 
 #						@printf("Old strategy %7f New strategy %7f",ag[i].stg,newStg)
-#						@printf("Aixo no hauria de passar Fitness(newStg) %7f avgEx %7f dif %7f  \n",Fitness(newStg),avgEx,avgEx-Fitness(newStg))
-						# Jump
-						_jump=false
-						if _dpivot==0
-							#greedy
-							_jump=true
+#				 		@printf("Aixo no hauria de passar Fitness(newStg) %7f avgEx %7f dif %7f  \n",Fitness(newStg),avgEx,avgEx-Fitness(newStg))
+					# Jump
+					_jump=false
+					if _dpivot==0
+						#greedy
+						_jump=true
+					else 
+						#only 1 proportional negative is considered
+						if (strategy==2 || strategy ==3)
+							_p=(Fitness(ag[i].stg)-_minfit)/(avgEx-_minfit)
 						else 
-							#only 1 proportional negative is considered
-							if (strategy==2 || strategy ==3)
-								_p=(Fitness(ag[i].stg)-_minfit)/(avgEx-_minfit)
-							else 
-								_p=(Fitness(ag[i].stg)-_minfit)/(bestCases[ag[i].tBCase]-_minfit)
-							end 
-							_p=1-_p
-							if rand()<=_p 
-								_jump=true
-							end
-						end
-						if _jump==true
-							btC=int(rand()*4)+2	#bt 2..6 bits
-							for j=1:btC
-								bC=int(rand()*(length(_freebits)-1))+1 
-								if BitGet(ag[i].stg,_freebits[bC])==0	# Flip
-									ag[i].stg=BitSet(ag[i].stg,_freebits[bC],1)
-								else
-									ag[i].stg=BitSet(ag[i].stg,_freebits[bC],0)
-								end
-							end
-							canvi=true
-							ag[i].nPivot=ag[i].nPivot+1
+							_p=(Fitness(ag[i].stg)-_minfit)/(bestCases[ag[i].tBCase]-_minfit)
+						end 
+						_p=1-_p
+						if rand()<=_p 
+							_jump=true
 						end
 					end
+					if _jump==true
+						btC=int(rand()*4)+2	#bt 2..6 bits
+						for j=1:btC
+							bC=int(rand()*(length(_freebits)-1))+1 
+							if BitGet(ag[i].stg,_freebits[bC])==0	# Flip
+								ag[i].stg=BitSet(ag[i].stg,_freebits[bC],1)
+							else
+								ag[i].stg=BitSet(ag[i].stg,_freebits[bC],0)
+							end
+						end
+						canvi=true
+						ag[i].nPivot=ag[i].nPivot+1
+					end
 				end
+			  end
 			end
 		end
 		_niter=_niter+1
@@ -196,47 +196,47 @@ if (strategy==5)
 #		@printf("We have _minfit \n")
 
 		for i=1:nagents
-			if ag[i].nPivot<ag[i].mPivot	
-				newStg=BestStrategy(strategy, ag[i], _freebits)
-				if newStg != ag[i].stg
-					ag[i].stg=newStg
-					canvi=true
-				else
+			newStg=BestStrategy(strategy, ag[i], _freebits)
+			if newStg != ag[i].stg
+				ag[i].stg=newStg
+				canvi=true
+			else
+			  if ag[i].nPivot<ag[i].mPivot	
 #					@printf("Are we going to jump? Fitness(newStg) %5f bestCases[ag[i].tBCase] %5f \n",Fitness(newStg),bestCases[ag[i].tBCase])
-					if Fitness(newStg)<bestCases[ag[i].tBCase]
+				if Fitness(newStg)<bestCases[ag[i].tBCase]
 #					@printf("Are we going to jump 2?\n")	
 #					@printf("agent %2d tBCase %2d nPivot %2d mPivot %2d \n",i,ag[i].tBCase,ag[i].nPivot,ag[i].mPivot)
 #					@printf("Fitness(newStg) %4f bestCases[ag[i].tBCase] %4f \n",Fitness(newStg),bestCases[ag[i].tBCase])
-						# Jump
-						_jump=false
-						if _dpivot==0
-							#greedy
-							_jump=true
-						else 
-							#only 1 proportional negative is considered
-							_p=(Fitness(ag[i].stg)-_minfit)/(bestCases[ag[i].tBCase]-_minfit)
-						end 
-						_p=1-_p
-						if rand()<=_p 
-							_jump=true
-						end
-						if _jump==true
-							btC=int(rand()*4)+2	#bt 2..6 bits
-							for j=1:btC
-								bC=int(rand()*(length(_freebits)-1))+1 
-								if BitGet(ag[i].stg,_freebits[bC])==0	# Flip
-									ag[i].stg=BitSet(ag[i].stg,_freebits[bC],1)
-								else
-									ag[i].stg=BitSet(ag[i].stg,_freebits[bC],0)
-								end
-							end
-							canvi=true
-							ag[i].nPivot=ag[i].nPivot+1
-							njump=njump+1
-						end 
+					# Jump
+					_jump=false
+					if _dpivot==0
+						#greedy
+						_jump=true
+					else 
+						#only 1 proportional negative is considered
+						_p=(Fitness(ag[i].stg)-_minfit)/(bestCases[ag[i].tBCase]-_minfit)
+					end 
+					_p=1-_p
+					if rand()<=_p 
+						_jump=true
 					end
+					if _jump==true
+						btC=int(rand()*4)+2	#bt 2..6 bits
+						for j=1:btC
+							bC=int(rand()*(length(_freebits)-1))+1 
+							if BitGet(ag[i].stg,_freebits[bC])==0	# Flip
+								ag[i].stg=BitSet(ag[i].stg,_freebits[bC],1)
+							else
+								ag[i].stg=BitSet(ag[i].stg,_freebits[bC],0)
+							end
+						end
+						canvi=true
+						ag[i].nPivot=ag[i].nPivot+1
+						njump=njump+1
+					end 
 				end
-			end 
+			  end 	
+			end
 		end
 
 		bestCases=zeros(e)
