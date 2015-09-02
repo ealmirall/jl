@@ -1,1 +1,2 @@
-ssh -i "esteve.pem" admin@52.26.45.176
+ssh -i "esteve1.pem" ec2-user@52.10.14.223
+
